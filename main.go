@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+	fmt.Fprintf(w, "Hi there, this is a test", r.URL.Path[1:])
 	fmt.Println("NIce Shit")
 	fmt.Printf("KEY: %s", os.Getenv("key1"))
 }
